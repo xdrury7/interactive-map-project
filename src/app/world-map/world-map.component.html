@@ -1,0 +1,22 @@
+<h1>WORLD MAP</h1>
+<div class="container">
+    <div class="svg-container" [innerHTML]="loadSVG"></div>
+    <div class="data-column">
+      <div *ngIf="countryData">
+        <p>Country Name: {{ countryData.name }}</p>
+        <p>Region: {{countryData.region.value }}</p>
+        <p>Capital City: {{ countryData.capitalCity }}</p>
+        <p>Income Level: {{ countryData.incomeLevel.value}}</p>
+        <p>Latitude: {{ countryData.latitude }}</p>
+        <p>Longitude: {{ countryData.longitude }}</p>
+      </div>
+      <div *ngIf="!countryData">
+        <p>Country Name: No data available</p>
+        <p>Region: No data available</p>
+        <p>Capital City: No data available</p>
+        <p>Income Level: No data available</p>
+        <p>Latitude: No data available</p>
+        <p>Longitude: No data available</p>
+      </div>
+    </div>
+  </div>

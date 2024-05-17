@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7cb6f3;
+  }
+  h1 {
+    text-align: center;
+    background-color: darkblue;
+    color: whitesmoke;
+  }
+  
+  .svg-container {
+    flex: 3;
+  }
+  
+  .data-column {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f9fa; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .data-column p {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .data-column p strong {
+    color: #007bff; 
+  }
+  
+  .svg-container {
+    width: 100%;
+    height: auto;
+  }
